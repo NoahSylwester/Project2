@@ -19,6 +19,11 @@ class Player extends Model {
       }
     );
   }
+
+  static associate(models) {
+    Player.hasMany(models.PhysicalCard);
+    Player.hasMany(models.Deck);
+  }
 }
 
 module.exports = Player;

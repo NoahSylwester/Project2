@@ -22,6 +22,7 @@ app.set("view engine", "handlebars");
 
 app.use("/api/cards/", require("./routes/cardAPIRoutes"));
 app.use("/api/qrl-cards/", require("./routes/qrl-cardAPIRoutes"));
+app.use("/api/players/", require("./routes/playerAPIRoutes"));
 require("./routes/htmlRoutes")(app);
 
 var syncOptions = { force: false };

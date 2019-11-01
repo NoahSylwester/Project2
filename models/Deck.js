@@ -22,6 +22,8 @@ class Deck extends Model {
 
   static associate(models) {
     Deck.belongsTo(models.Player);
+
+    Deck.hasMany(models.DeckCard);
   }
 }
 

@@ -46,6 +46,10 @@ class Card extends Model {
   }
 
   static parse(data) {
+    if (Array.isArray(data)) {
+      return data.map(data => Card.parse(data));
+    }
+
     let card = {
       id: data.id,
       title: data.title,

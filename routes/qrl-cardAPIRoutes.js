@@ -7,9 +7,14 @@ const { models } = require("../models");
 const include = [models.Card, models.Player];
 
 router.get("/", (req, res) => {
-  models.PhysicalCard.findAll({ include }).then(cards => {
-    res.json(cards);
-  });
+  models.PhysicalCard.findAll({ include })
+    .then(cards => {
+      res.json(cards);
+    })
+    .catch(err => {
+      console.error(err);
+      res.status(400).end();
+    });
 });
 
 router.get("/:hash", (req, res) => {
@@ -17,9 +22,14 @@ router.get("/:hash", (req, res) => {
   models.PhysicalCard.findOne({
     where: { hash },
     include
-  }).then(card => {
-    res.json(card);
-  });
+  })
+    .then(card => {
+      res.json(card);
+    })
+    .catch(err => {
+      console.error(err);
+      res.status(400).end();
+    });
 });
 
 router.post("/", (req, res) => {

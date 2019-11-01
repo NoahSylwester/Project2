@@ -38,12 +38,7 @@ class Deck extends Model {
     };
 
     if (data.deckCards) {
-      deck.cards = data.deckCards.map(deckCard => {
-        if (deckCard.dataValues) {
-          deckCard = deckCard.dataValues;
-        }
-        return models.DeckCard.parse(deckCard, models);
-      });
+      deck.cards = models.DeckCard.parse(data.deckCards, models);
     }
 
     return deck;

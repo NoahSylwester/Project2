@@ -6,9 +6,15 @@ const { models } = require("../models");
 
 router.get("/:alias", (req, res) => {
   let { alias } = req.params;
-  models.Player.findOne({ where: { alias } }).then(player => {
-    res.json(player);
-  });
+  models.Player.findOne({ where: { alias } })
+    .then(data => data.get({ plain: true }))
+    .then(player => {
+      res.json(player);
+    })
+    .catch(err => {
+      console.error(err);
+      res.status(400).end();
+    });
 });
 
 router.get("/:alias/cards", (req, res) => {
@@ -27,14 +33,28 @@ router.get("/:alias/cards", (req, res) => {
       }
     ]
   })
-    .then(player => {
-      return player.physicalCards;
+    .then(data => data.get({ plain: true }))
+    .then(player => player.physicalCards)
+    .then(realCards => {
+      let cards = {};
+      realCards.forEach(realCard => {
+        if (!cards[realCard.cardId]) {
+          cards[realCard.cardId] = {
+            cardId: realCard.cardId,
+            count: 1,
+            card: models.Card.parse(realCard.card),
+            hashes: [realCard.hash]
+          };
+        } else {
+          cards[realCard.cardId].count++;
+          cards[realCard.cardId].hashes.push(realCard.hash);
+        }
+      });
+      res.json(Object.values(cards));
     })
-    .then(physicalCards => {
-      res.json(models.PhysicalCard.parse(physicalCards, models));
-    })
-    .then(physicalCards => {
-      res.json(physicalCards);
+    .catch(err => {
+      console.error(err);
+      res.status(400).end();
     });
 });
 
@@ -58,6 +78,10 @@ router.get("/:alias/decks", (req, res) => {
     .then(player => player.decks)
     .then(decks => {
       res.json(models.Deck.parse(decks, models));
+    })
+    .catch(err => {
+      console.error(err);
+      res.status(400).end();
     });
 });
 
@@ -92,7 +116,7 @@ router.post("/:alias/decks", (req, res) => {
         ]
       }
     )
-      .then(creationResult => creationResult.dataValues)
+      .then(data => data.get({ plain: true }))
       .then(deck => {
         res.json(models.Deck.parse(deck, models));
       })

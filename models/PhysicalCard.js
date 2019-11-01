@@ -34,18 +34,12 @@ class PhysicalCard extends Model {
       cardId: data.cardId
     };
 
-    let card = models.Card.parse(data.card);
-
-    Object.keys(card).forEach(key => {
-      if (key === "id") {
-        return;
-      } else {
-        qrlCard[key] = card[key];
-      }
-    });
+    if (data.card) {
+      qrlCard.card = models.Card.parse(data.card);
+    }
 
     if (data.player) {
-      qrlCard.player = data.player;
+      qrlCard.player = models.Player.parse(data.player);
     }
 
     return qrlCard;

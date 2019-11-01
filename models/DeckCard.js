@@ -26,6 +26,10 @@ class DeckCard extends Model {
   }
 
   static parse(data, models) {
+    if (Array.isArray(data)) {
+      return data.map(data => DeckCard.parse(data));
+    }
+
     let deckCard = {
       cardId: data.cardId,
       count: data.count

@@ -24,6 +24,16 @@ class Player extends Model {
     Player.hasMany(models.PhysicalCard);
     Player.hasMany(models.Deck);
   }
+
+  static parse(data) {
+    if (Array.isArray(data)) {
+      return data.map(data => Player.parse(data));
+    }
+
+    return {
+      alias: data.alias
+    };
+  }
 }
 
 module.exports = Player;

@@ -18,6 +18,7 @@ router.get("/", (req, res) => {
       }
     ]
   })
+    .then(data => data.map(data => data.get({ plain: true })))
     .then(decks => {
       res.json(models.Deck.parse(decks, models));
     })
@@ -29,21 +30,16 @@ router.get("/", (req, res) => {
 
 router.get("/:id", (req, res) => {
   let { id } = req.params;
-  models.Deck.findOne({
-    where: { id },
+  models.Deck.findByPk(id, {
     include: [
       models.Player,
       {
         model: models.DeckCard,
-        include: [
-          {
-            model: models.Card,
-            include: [models.CardData]
-          }
-        ]
+        include: [{ model: models.Card, include: [models.CardData] }]
       }
     ]
   })
+    .then(data => data.get({ plain: true }))
     .then(deck => {
       res.json(models.Deck.parse(deck, models));
     })
@@ -70,6 +66,7 @@ router.delete("/:id", (req, res) => {
       }
       return models.DeckCard.destroy({ where: { deckId: null } });
     })
+    .then(data => data.get({ plain: true }))
     .then(result => {
       console.log(result);
       res.status(200).end();

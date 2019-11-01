@@ -4,17 +4,16 @@ let router = Router();
 
 const { models } = require("../models");
 
-const include = [models.CardData];
-
 router.get("/", (req, res) => {
-  models.Card.findAll({ include }).then(cards => {
-    res.json(models.Card.parse(cards));
-  });
+  models.Card.findAll({ include: [models.CardData] })
+    .then(data => data.map(data => data.get({ plain: true })))
+    .then(cards => {
+      res.json(models.Card.parse(cards));
+    });
 });
 
 router.post("/", (req, res) => {
-  let { body } = req;
-  let { title, description, type, imagePath, cardData } = body;
+  let { title, description, type, imagePath, cardData } = req.body;
 
   if (
     !title ||
@@ -36,8 +35,9 @@ router.post("/", (req, res) => {
       imagePath,
       cardData
     },
-    { include }
+    { include: [models.CardData] }
   )
+    .then(data => data.get({ plain: true }))
     .then(newCard => {
       res.json(models.Card.parse(newCard));
     })
@@ -49,9 +49,8 @@ router.post("/", (req, res) => {
 
 router.get("/:id", (req, res) => {
   let { id } = req.params;
-  models.Card.findByPk(id, {
-    include: [models.CardData]
-  })
+  models.Card.findByPk(id, { include: [models.CardData] })
+    .then(data => data.get({ plain: true }))
     .then(card => {
       res.json(models.Card.parse(card));
     })

@@ -1,12 +1,12 @@
 "use strict";
 
-var fs = require("fs");
-var path = require("path");
-var Sequelize = require("sequelize");
-var basename = path.basename(module.filename);
-var env = process.env.NODE_ENV || "development";
-var config = require(__dirname + "/../config/config.js")[env];
-var db = {};
+const path = require("path");
+
+const Sequelize = require("sequelize");
+
+const env = process.env.NODE_ENV || "development";
+
+const config = require(path.join(__dirname, "/../config/config.js"))[env];
 
 if (config.use_env_variable) {
   var sequelize = new Sequelize(process.env[config.use_env_variable]);
@@ -19,24 +19,27 @@ if (config.use_env_variable) {
   );
 }
 
-fs.readdirSync(__dirname)
-  .filter(function(file) {
-    return (
-      file.indexOf(".") !== 0 && file !== basename && file.slice(-3) === ".js"
-    );
-  })
-  .forEach(function(file) {
-    var model = sequelize.import(path.join(__dirname, file));
-    db[model.name] = model;
-  });
+const models = {
+  Card: require("./Card.js"),
+  CardData: require("./CardData.js"),
+  Player: require("./Player.js"),
+  Deck: require("./Deck.js"),
+  DeckCard: require("./DeckCard.js"),
+  PhysicalCard: require("./PhysicalCard.js")
+};
 
-Object.keys(db).forEach(function(modelName) {
-  if (db[modelName].associate) {
-    db[modelName].associate(db);
-  }
+Object.values(models).forEach((model) => {
+  model.init(sequelize);
 });
 
-db.sequelize = sequelize;
-db.Sequelize = Sequelize;
+Object.values(models).forEach((model) => {
+  if (model.associate)
+    model.associate(models);
+});
 
-module.exports = db;
+
+module.exports = {
+  sequelize,
+  Sequelize,
+  models
+};

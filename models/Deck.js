@@ -22,6 +22,31 @@ class Deck extends Model {
 
   static associate(models) {
     Deck.belongsTo(models.Player);
+
+    Deck.hasMany(models.DeckCard);
+  }
+
+  static parse(data, models) {
+    if (Array.isArray(data)) {
+      return data.map(data => Deck.parse(data, models));
+    }
+
+    let deck = {
+      id: data.id,
+      name: data.name,
+      playerId: data.playerId
+    };
+
+    if (data.deckCards) {
+      deck.cards = data.deckCards.map(deckCard => {
+        if (deckCard.dataValues) {
+          deckCard = deckCard.dataValues;
+        }
+        return models.DeckCard.parse(deckCard, models);
+      });
+    }
+
+    return deck;
   }
 }
 

@@ -8,7 +8,7 @@ const include = [models.CardData];
 
 router.get("/", (req, res) => {
   models.Card.findAll({ include }).then(cards => {
-    res.json(cards.map(card => models.Card.parse(card)));
+    res.json(models.Card.parse(cards));
   });
 });
 
@@ -22,7 +22,7 @@ router.post("/", (req, res) => {
     !type ||
     !imagePath ||
     !cardData ||
-    typeof cardData !== "array"
+    !Array.isArray(cardData)
   ) {
     res.status(400).end();
     return;
@@ -51,9 +51,14 @@ router.get("/:id", (req, res) => {
   let { id } = req.params;
   models.Card.findByPk(id, {
     include: [models.CardData]
-  }).then(card => {
-    res.json(models.Card.parse(card));
-  });
+  })
+    .then(card => {
+      res.json(models.Card.parse(card));
+    })
+    .catch(err => {
+      console.error(err);
+      res.status(400).end();
+    });
 });
 
 module.exports = router;

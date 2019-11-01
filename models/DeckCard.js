@@ -24,6 +24,19 @@ class DeckCard extends Model {
     DeckCard.belongsTo(models.Card);
     DeckCard.belongsTo(models.Deck);
   }
+
+  static parse(data, models) {
+    let deckCard = {
+      cardId: data.cardId,
+      count: data.count
+    };
+
+    if (data.card) {
+      deckCard.card = models.Card.parse(data.card);
+    }
+
+    return deckCard;
+  }
 }
 
 module.exports = DeckCard;

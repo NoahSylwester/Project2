@@ -18,8 +18,5 @@ var currentCode = qr.toFile('./that.png', hashedValue, function(){
 var secondCode = qr.toFile('./whatever.png', hashedValue2, function(){
   console.log("second");
 });
-// .then(res => {
-//   returnedCode = res.substr(0, 25);
-//   console.log(returnedCode);
-// });
+
 

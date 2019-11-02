@@ -69,9 +69,13 @@ class Card extends Model {
     let { title, description, type, imagePath, cardData } = data;
 
     let badData = false;
-    if (!title || !description || !type || !imagePath || !cardData) {
-      badData = true;
-    } else if (typeof cardData !== "object") {
+    if (
+      typeof title === "undefined" ||
+      typeof description === "undefined" ||
+      typeof type === "undefined" ||
+      typeof imagePath === "undefined" ||
+      typeof cardData !== "object"
+    ) {
       badData = true;
     } else {
       if (!Array.isArray(cardData)) {
@@ -97,7 +101,7 @@ class Card extends Model {
 
     return new Promise(resolve => {
       if (badData) {
-        resolve({
+        return resolve({
           status: 400,
           statusText: "BAD DATA",
           data
@@ -123,7 +127,7 @@ class Card extends Model {
       )
         .then(data => data.get({ plain: true }))
         .then(newCard => {
-          resolve({
+          return resolve({
             status: 200,
             statusText: "OK",
             card: models.Card.parse(newCard)
@@ -131,7 +135,7 @@ class Card extends Model {
         })
         .catch(err => {
           console.error(err);
-          resolve({
+          return resolve({
             status: 422,
             statusText: "FAILED",
             data

@@ -69,10 +69,30 @@ class Card extends Model {
     let { title, description, type, imagePath, cardData } = data;
 
     let badData = false;
-    if (!title || !description || !type || !imagePath) {
+    if (!title || !description || !type || !imagePath || !cardData) {
       badData = true;
-    } else if (!cardData || !Array.isArray(cardData)) {
+    } else if (typeof cardData !== "object") {
       badData = true;
+    } else {
+      if (!Array.isArray(cardData)) {
+        cardData = Object.entries(cardData).map(entry => {
+          let [type, data] = entry;
+          return { type, data };
+        });
+      }
+      let types = models.CardData.rawAttributes.type.values;
+      console.log(types);
+      cardData.forEach(data => {
+        if (badData) {
+          return;
+        }
+        if (!data.type || !data.data) {
+          badData = true;
+        }
+        if (!types.includes(data.type)) {
+          badData = true;
+        }
+      });
     }
 
     return new Promise(resolve => {
@@ -83,6 +103,13 @@ class Card extends Model {
           data
         });
       }
+
+      cardData.forEach(data => {
+        if (typeof data.data !== "string") {
+          data.data = JSON.stringify(data.data);
+        }
+        return data;
+      });
 
       Card.create(
         {

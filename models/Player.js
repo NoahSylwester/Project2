@@ -6,6 +6,7 @@ class Player extends Model {
       {
         alias: {
           type: DataTypes.STRING,
+          unique: true,
           allowNull: false,
           validate: {
             notEmpty: true

@@ -2,8 +2,6 @@ const { Model, DataTypes } = require("sequelize");
 
 const CardTypes = ["monster", "spell", "secret"];
 
-const ImagePaths = ["./"];
-
 class Card extends Model {
   static init(sequelize) {
     return super.init(
@@ -18,7 +16,10 @@ class Card extends Model {
         },
         description: {
           type: DataTypes.STRING,
-          allowNull: false
+          allowNull: false,
+          validate: {
+            notEmpty: true
+          }
         },
         type: {
           type: DataTypes.ENUM,
@@ -26,9 +27,12 @@ class Card extends Model {
           allowNull: false
         },
         imagePath: {
-          type: DataTypes.ENUM,
+          type: DataTypes.STRING,
           values: ImagePaths,
-          allowNull: false
+          allowNull: false,
+          validate: {
+            notEmpty: true
+          }
         }
       },
       {

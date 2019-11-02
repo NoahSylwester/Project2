@@ -13,38 +13,19 @@ router.get("/", (req, res) => {
 });
 
 router.post("/", (req, res) => {
-  let { title, description, type, imagePath, cardData } = req.body;
+  let { body } = req;
 
-  if (
-    !title ||
-    !description ||
-    !type ||
-    !imagePath ||
-    !cardData ||
-    !Array.isArray(cardData)
-  ) {
-    res.status(400).end();
-    return;
-  }
-
-  models.Card.create(
-    {
-      title,
-      description,
-      type,
-      imagePath,
-      cardData
-    },
-    { include: [models.CardData] }
-  )
-    .then(data => data.get({ plain: true }))
-    .then(newCard => {
-      res.json(models.Card.parse(newCard));
-    })
-    .catch(err => {
-      console.error(err);
-      res.status(422).end();
+  if (Array.isArray(body)) {
+    Promise.all(body.map(data => models.Card.post(data, models))).then(
+      cards => {
+        res.json(cards);
+      }
+    );
+  } else {
+    models.Card.post(body, models).then(card => {
+      res.json(card);
     });
+  }
 });
 
 router.get("/:id", (req, res) => {

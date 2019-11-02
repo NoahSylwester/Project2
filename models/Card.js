@@ -16,10 +16,7 @@ class Card extends Model {
         },
         description: {
           type: DataTypes.STRING,
-          allowNull: false,
-          validate: {
-            notEmpty: true
-          }
+          allowNull: false
         },
         type: {
           type: DataTypes.ENUM,
@@ -28,7 +25,6 @@ class Card extends Model {
         },
         imagePath: {
           type: DataTypes.STRING,
-          values: ImagePaths,
           allowNull: false,
           validate: {
             notEmpty: true
@@ -67,6 +63,54 @@ class Card extends Model {
     });
 
     return card;
+  }
+
+  static post(data, models) {
+    let { title, description, type, imagePath, cardData } = data;
+
+    let badData = false;
+    if (!title || !description || !type || !imagePath) {
+      badData = true;
+    } else if (!cardData || !Array.isArray(cardData)) {
+      badData = true;
+    }
+
+    return new Promise(resolve => {
+      if (badData) {
+        resolve({
+          status: 400,
+          statusText: "BAD DATA",
+          data
+        });
+      }
+
+      Card.create(
+        {
+          title,
+          description,
+          type,
+          imagePath,
+          cardData
+        },
+        { include: [models.CardData] }
+      )
+        .then(data => data.get({ plain: true }))
+        .then(newCard => {
+          resolve({
+            status: 200,
+            statusText: "OK",
+            card: models.Card.parse(newCard)
+          });
+        })
+        .catch(err => {
+          console.error(err);
+          resolve({
+            status: 422,
+            statusText: "FAILED",
+            data
+          });
+        });
+    });
   }
 }
 

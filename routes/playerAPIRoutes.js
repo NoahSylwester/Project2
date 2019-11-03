@@ -4,6 +4,30 @@ let router = Router();
 
 const { models } = require("../models");
 
+router.get("/", (req, res) => {
+  models.Player.findAll()
+    .then(data => data.map(data => data.get({ plain: true })))
+    .then(player => {
+      res.json(player);
+    })
+    .catch(err => {
+      console.error(err);
+      res.status(400).end();
+    });
+});
+
+router.post("/", (req, res) => {
+  let { name } = req.body;
+  models.Player.create({ name })
+    .then(data => data)
+    .get({ plain: true })
+    .then(player => res.json(models.Player.parse(player)))
+    .catch(err => {
+      console.error(err);
+      res.status(422).end();
+    });
+});
+
 router.get("/:alias", (req, res) => {
   let { alias } = req.params;
   models.Player.findOne({ where: { alias } })
@@ -75,6 +99,7 @@ router.get("/:alias/decks", (req, res) => {
       }
     ]
   })
+    .then(data => data.get({ plain: true }))
     .then(player => player.decks)
     .then(decks => {
       res.json(models.Deck.parse(decks, models));

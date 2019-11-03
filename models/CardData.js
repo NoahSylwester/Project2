@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require("sequelize");
 
-const CardDataType = ["cost", "attack", "defense", "ability", "racial"];
+const CardDataType = ["cost", "attack", "defense", "ability"];
 
 class CardData extends Model {
   static init(sequelize) {

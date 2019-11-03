@@ -1,0 +1,58 @@
+html {
+  height: 100%;
+}
+body {
+  background-image: url('https://images.unsplash.com/photo-1491982883790-ead7c97a047e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=685&q=80');
+  background-size: cover;
+}
+button {
+  margin-top: 5px;
+}
+.build-area {
+  height: 500px;
+  overflow: scroll;
+  text-align: center;
+  border: 1px black solid;
+  padding: 10px;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.103);
+}
+.deck-area {
+  height: 500px;
+  overflow: scroll;
+  text-align: center;
+  border: 1px black solid;
+  padding: 10px;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.103);
+}
+.deck-area img {
+  width: 75%;
+  margin-top: 20px;
+}
+.card-img {
+  width: 100px;
+  margin: 20px;
+}
+.card-img:hover {
+  box-shadow: rgb(10, 54, 8) 0 0 30px;
+}
+.card-img:active {
+  box-shadow: rgb(13, 54, 92) 0 0 50px;
+}
+.deck-card-img:hover {
+  box-shadow: rgb(10, 54, 8) 0 0 30px;
+}
+.deck-card-img:active {
+  box-shadow: rgb(13, 54, 92) 0 0 50px;
+}
+.modal-body {
+  text-align: center;
+}
+.modal-body input {
+  height: 3rem;
+  font-size: 2rem;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+}

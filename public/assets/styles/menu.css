@@ -1,0 +1,24 @@
+html {
+  height: 100%;
+}
+body {
+  background-image: url('https://images.unsplash.com/photo-1493922532192-cc89807789a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=753&q=80');
+  background-size: cover;
+  height: 100%;
+}
+button {
+  margin: 20px;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.deck:hover {
+  box-shadow: 0 0 40px rgb(12, 99, 12);
+}
+.battle:hover {
+  box-shadow: 0 0 40px rgb(255, 209, 6);
+}

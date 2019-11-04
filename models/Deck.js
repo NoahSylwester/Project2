@@ -38,7 +38,7 @@ class Deck extends Model {
     };
 
     if (data.deckCards) {
-      deck.cards = models.DeckCard.parse(data.deckCards, models);
+      deck.deckCards = models.DeckCard.parse(data.deckCards, models);
     }
 
     return deck;

@@ -64,6 +64,54 @@ class Card extends Model {
 
     return card;
   }
+  function getTargetCard() {
+    // console.log("Who would you like to target?");
+  
+    // User clicks on target creature or player
+    // That object is the return type of the spells
+  }
+  
+  function checkCondition(targetedCard) {
+    if (targetedCard.cardData.defense <= 0){
+      // write discard function
+    }
+  }
+  
+  function targetedSpell(type, value, ) {
+  
+    if (type == "directDamage") {
+      targetedCard.cardData.defense -= value;
+  
+      checkCondition(targetedCard);
+    }
+    else if (type == "directHealing") {
+      targetedCard.cardData.defense += value;
+    }
+    else if (type == "destroyCreature") {
+      targetedCard.cardData.defense = 0;
+      checkCondition(targetedCard);
+    }
+    else if (type == "increaseAttack") {
+      targetedCard.cardData.attack += value;
+    }
+    else if (type == "increaseDefense") {
+      targetCard.cardData.defense += value;
+    }
+    else if (type == "decreaseAttack") {
+      targetedCard.cardData.attack -= value;
+      if (targetedCard.cardData.attack < 0) {
+        targetedCard.cardData.attack = 0;
+      }
+    }
+    else if (type == "decreaseDefense") {
+      targetedCard.cardData.defense -= value;
+      if (targetedCard.cardData.defense <= 0) {
+        targetedCard.cardData.defense = 1;
+      }
+    }
+  
 }
+
+
 
 module.exports = Card;

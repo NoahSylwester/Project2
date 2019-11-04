@@ -1223,16 +1223,3 @@ var creatures = [{
   ]
 }
 ];
-
-console.log(creatures.length);
-
-
-
-
-
-
-
-
-
-
-

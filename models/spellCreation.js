@@ -835,5 +835,3 @@ var spellCreation = [
     ]
   }
 ]
-
-console.log(spellCreation.length);

@@ -1,5 +1,9 @@
 var sha = require("js-sha256");
 var qr = require("qrcode");
+var express = require('express');
+var app = express();
+
+var routes = require('./routes/htmlRoutes');
 
 var hashedValue = sha('Elven Warrior7');
 var hashedValue2 = sha('Elven Warrior8');

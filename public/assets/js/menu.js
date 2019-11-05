@@ -13,12 +13,20 @@ $("#battle").on("click", event => {
     data.forEach(deck => {
       $(".menu").append(
         $(
-          `<a href="/game"><button class='btn btn-lg btn-dark deck-choice' data-id='${deck.id}'>${deck.name}</button></a>`
+          `<a href=""><button class='btn btn-lg btn-dark deck-choice' data-id='${deck.id}'>${deck.name}</button></a>`
         )
       );
     });
 
-    $(".deck-choice").on("click", function() {
+    $(".menu").append(
+      $(
+        // eslint-disable-next-line quotes
+        `<a href="/game"><button class='btn btn-lg btn-light'>Battle!</button></a>`
+      )
+    );
+
+    $(".deck-choice").on("click", function(event) {
+      event.preventDefault();
       chosenDeckId = $(this).data("id");
       localStorage.setItem({ deckId: chosenDeckId });
     });

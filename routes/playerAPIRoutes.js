@@ -17,10 +17,9 @@ router.get("/", (req, res) => {
 });
 
 router.post("/", (req, res) => {
-  let { name } = req.body;
-  models.Player.create({ name })
-    .then(data => data)
-    .get({ plain: true })
+  let { alias } = req.body;
+  models.Player.create({ alias })
+    .then(data => data.get({ plain: true }))
     .then(player => res.json(models.Player.parse(player)))
     .catch(err => {
       console.error(err);

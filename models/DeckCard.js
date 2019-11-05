@@ -27,7 +27,7 @@ class DeckCard extends Model {
 
   static parse(data, models) {
     if (Array.isArray(data)) {
-      return data.map(data => DeckCard.parse(data));
+      return data.map(data => DeckCard.parse(data, models));
     }
 
     let deckCard = {

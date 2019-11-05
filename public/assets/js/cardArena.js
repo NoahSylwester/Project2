@@ -1830,7 +1830,7 @@ function animate() {
 animate();
 
 // connection to server
-var socket = io.connect("http://localhost");
+var socket = io.connect("https://project-2-nwh.herokuapp.com/");
 
 socket.on("connected", function(data) {
   socket.emit("connected", { deck: playerDeck });

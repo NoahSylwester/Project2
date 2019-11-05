@@ -43,6 +43,6 @@ sequelize.sync(syncOptions).then(() => {
   });
 });
 
-require('./bin/socketServer.js')(app);
+require("./bin/socketServer.js")(app);
 
 module.exports = app;

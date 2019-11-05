@@ -76,7 +76,7 @@ var creatures = [
     title: "Armored Escort",
     description: "",
     type: "monster",
-    imagePath: "abomination.png",
+    imagePath: "armored_escort.png",
     cardData: [
       {
         type: "cost",

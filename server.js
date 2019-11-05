@@ -34,15 +34,7 @@ if (process.env.NODE_ENV === "test") {
 }
 
 sequelize.sync(syncOptions).then(() => {
-  app.listen(PORT, function() {
-    console.log(
-      "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
-      PORT,
-      PORT
-    );
-  });
+  require("./bin/socketServer.js")(app, PORT);
 });
-
-require("./bin/socketServer.js")(app);
 
 module.exports = app;

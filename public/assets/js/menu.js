@@ -6,13 +6,11 @@ $("#battle").on("click", event => {
     method: "GET",
     contentType: "application/json"
   }).then(data => {
-    console.log(data);
     $(".menu")
       .empty()
       .css({ display: "block", margin: "0 25% 0 25%" });
 
     data.forEach(deck => {
-      console.log(deck);
       $(".menu").append(
         $(
           `<a href="/game"><button class='btn btn-lg btn-dark deck-choice' data-id='${deck.id}'>${deck.name}</button></a>`

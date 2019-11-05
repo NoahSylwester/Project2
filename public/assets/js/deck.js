@@ -100,7 +100,7 @@ $("#save-deck").on("click", function(event) {
     }).then(function(err, res) {
       console.log(err, res);
       // change modal content
-      if (err) {
+      if (typeof err !== "object") {
         $(".modal-header").html(
           // eslint-disable-next-line prettier/prettier
           "<h5 class=\"modal-title\" id=\"nameModalLabel\">An error has occurred</h5>"

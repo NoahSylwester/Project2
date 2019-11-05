@@ -111,8 +111,7 @@ router.get("/:alias/decks", (req, res) => {
 
 router.post("/:alias/decks", (req, res) => {
   let { alias } = req.params;
-  let { body } = req;
-  let { name, deckCards } = body;
+  let { name, deckCards } = req.body;
 
   if (!name || !Array.isArray(deckCards)) {
     res.status(400).end();

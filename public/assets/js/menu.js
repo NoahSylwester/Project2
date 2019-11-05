@@ -3,7 +3,7 @@ $("#battle").on("click", function(event) {
   event.preventDefault();
   let requestUrl = "/api/decks/";
   $.ajax(requestUrl, {
-    method: GET
+    method: "GET"
   }).then(function(data) {
     $(".menu")
       .empty()

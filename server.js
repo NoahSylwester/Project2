@@ -3,7 +3,7 @@ require("dotenv").config();
 const express = require("express");
 const handlebars = require("express-handlebars");
 
-const { sequelize } = require("./models");
+// const { sequelize } = require("./models");
 
 const app = express();
 const PORT = process.env.PORT || 3000;

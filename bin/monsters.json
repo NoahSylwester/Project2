@@ -1,0 +1,777 @@
+[
+  {
+    "title": "Abomination",
+    "description": "",
+    "type": "monster",
+    "imagePath": "abomination.png",
+    "cardData": {
+      "cost": 3,
+      "attack": 3,
+      "defense": 3,
+      "ability": [
+        "poisonous"
+      ],
+      "monsterType": [
+        "Familiar"
+      ]
+    }
+  },
+  {
+    "title": "Male Drow Warrior",
+    "description": "",
+    "type": "monster",
+    "imagePath": "drow_warrior_male.png",
+    "cardData": {
+      "cost": 2,
+      "attack": 2,
+      "defense": 2,
+      "monsterType": [
+        "Elf"
+      ]
+    }
+  },
+  {
+    "title": "Adult Fishkin",
+    "description": "",
+    "type": "monster",
+    "imagePath": "adult_fishkin.png",
+    "cardData": {
+      "cost": 4,
+      "attack": 4,
+      "defense": 4,
+      "monsterType": [
+        "Familiar"
+      ]
+    }
+  },
+  {
+    "title": "Armored Escort",
+    "description": "",
+    "type": "monster",
+    "imagePath": "armored_escort.png",
+    "cardData": {
+      "cost": 2,
+      "attack": 2,
+      "defense": 2,
+      "ability": [
+        "taunt"
+      ],
+      "monsterType": [
+        "Human"
+      ]
+    }
+  },
+  {
+    "title": "Baby Blue Dragon",
+    "description": "",
+    "type": "monster",
+    "imagePath": "baby_blue_dragon.png",
+    "cardData": {
+      "cost": 1,
+      "attack": 2,
+      "defense": 1,
+      "monsterType": [
+        "Dragon"
+      ]
+    }
+  },
+  {
+    "title": "Baby Green Monster",
+    "description": "",
+    "type": "monster",
+    "imagePath": "baby_green_monster.png",
+    "cardData": {
+      "cost": 2,
+      "attack": 2,
+      "defense": 2,
+      "monsterType": [
+        "Dragon"
+      ]
+    }
+  },
+  {
+    "title": "Baby Skeleton",
+    "description": "",
+    "type": "monster",
+    "imagePath": "baby_skeleton.png",
+    "cardData": {
+      "cost": 1,
+      "attack": 1,
+      "defense": 1,
+      "monsterType": [
+        "Familiar"
+      ]
+    }
+  },
+  {
+    "title": "Elite Barbarian",
+    "description": "",
+    "type": "monster",
+    "imagePath": "barbarian_male.png",
+    "cardData": {
+      "cost": 6,
+      "attack": 6,
+      "defense": 6,
+      "monsterType": [
+        "Human"
+      ]
+    }
+  },
+  {
+    "title": "Blue Lion Rat",
+    "description": "",
+    "type": "monster",
+    "imagePath": "blue_creature.png",
+    "cardData": {
+      "cost": 4,
+      "attack": 4,
+      "defense": 4,
+      "monsterType": [
+        "Creature"
+      ]
+    }
+  },
+  {
+    "title": "Blue Tongued Cave Dweller",
+    "description": "",
+    "type": "monster",
+    "imagePath": "blue_tongued_cave_dweller.png",
+    "cardData": {
+      "cost": 3,
+      "attack": 4,
+      "defense": 2,
+      "monsterType": [
+        "Creature"
+      ]
+    }
+  },
+  {
+    "title": "Forest Boar",
+    "description": "",
+    "type": "monster",
+    "imagePath": "boar.png",
+    "cardData": {
+      "cost": 2,
+      "attack": 2,
+      "defense": 1,
+      "ability": [
+        "charge"
+      ],
+      "monsterType": [
+        "Animal"
+      ]
+    }
+  },
+  {
+    "title": "Cave Bug",
+    "description": "",
+    "type": "monster",
+    "imagePath": "cave_bug.png",
+    "cardData": {
+      "cost": 2,
+      "attack": 1,
+      "defense": 2,
+      "ability": [
+        "poisonous"
+      ],
+      "monsterType": [
+        "Insect"
+      ]
+    }
+  },
+  {
+    "title": "Epic Crab",
+    "description": "",
+    "type": "monster",
+    "imagePath": "crab.png",
+    "cardData": {
+      "cost": 4,
+      "attack": 3,
+      "defense": 5,
+      "monsterType": [
+        "Animal"
+      ]
+    }
+  },
+  {
+    "title": "Goblin Cultist",
+    "description": "",
+    "type": "monster",
+    "imagePath": "cultist_goblin.png",
+    "cardData": {
+      "cost": 4,
+      "attack": 2,
+      "defense": 3,
+      "monsterType": [
+        "Goblin",
+        "Magic"
+      ]
+    }
+  },
+  {
+    "title": "Killer Cyclops",
+    "description": "",
+    "type": "monster",
+    "imagePath": "cyclops.png",
+    "cardData": {
+      "cost": 4,
+      "attack": 5,
+      "defense": 3,
+      "ability": [
+        "charge"
+      ],
+      "monsterType": [
+        "Orc"
+      ]
+    }
+  },
+  {
+    "title": "Dangerous Squid",
+    "description": "",
+    "type": "monster",
+    "imagePath": "dangerous_squid.png",
+    "cardData": {
+      "cost": 4,
+      "attack": 3,
+      "defense": 5,
+      "ability": [
+        "poisonous"
+      ],
+      "monsterType": [
+        "Animal"
+      ]
+    }
+  },
+  {
+    "title": "Deep Sea Creature",
+    "description": "",
+    "type": "monster",
+    "imagePath": "deepsea_creature.png",
+    "cardData": {
+      "cost": 3,
+      "attack": 3,
+      "defense": 2,
+      "monsterType": [
+        "Creature"
+      ]
+    }
+  },
+  {
+    "title": "Demon Headhunter",
+    "description": "",
+    "type": "monster",
+    "imagePath": "demon_headhunter.png",
+    "cardData": {
+      "cost": 7,
+      "attack": 7,
+      "defense": 7,
+      "monsterType": [
+        "Demon"
+      ]
+    }
+  },
+  {
+    "title": "Demon Soldier",
+    "description": "",
+    "type": "monster",
+    "imagePath": "demon_soldier.png",
+    "cardData": {
+      "cost": 3,
+      "attack": 3,
+      "defense": 3,
+      "monsterType": [
+        "Demon"
+      ]
+    }
+  },
+  {
+    "title": "Devourer",
+    "description": "",
+    "type": "monster",
+    "imagePath": "devourer.png",
+    "cardData": {
+      "cost": 1,
+      "attack": 1,
+      "defense": 1,
+      "ability": [
+        "poisonous"
+      ],
+      "monsterType": [
+        "Demon"
+      ]
+    }
+  },
+  {
+    "title": "Female Drow Warrior",
+    "description": "",
+    "type": "monster",
+    "imagePath": "drow_warrior_female.png",
+    "cardData": {
+      "cost": 2,
+      "attack": 3,
+      "defense": 1,
+      "monsterType": [
+        "Elf",
+        "Warrior"
+      ]
+    }
+  },
+  {
+    "title": "Female Dwarf Warrior",
+    "description": "",
+    "type": "monster",
+    "imagePath": "dwarf_warrior_female.png",
+    "cardData": {
+      "cost": 2,
+      "attack": 3,
+      "defense": 1,
+      "ability": [
+        "charge"
+      ],
+      "monsterType": [
+        "Dwarf",
+        "Warrior"
+      ]
+    }
+  },
+  {
+    "title": "Male Dwarf Warrior",
+    "description": "",
+    "type": "monster",
+    "imagePath": "dwarf_warrior_male.png",
+    "cardData": {
+      "cost": 3,
+      "attack": 3,
+      "defense": 3,
+      "monsterType": [
+        "Dwarf",
+        "Warrior"
+      ]
+    }
+  },
+  {
+    "title": "Dwarven Healer",
+    "description": "",
+    "type": "monster",
+    "imagePath": "dwarfen_healer_female.png",
+    "cardData": {
+      "cost": 2,
+      "attack": 1,
+      "defense": 3,
+      "monsterType": [
+        "Dwarf",
+        "Healer"
+      ]
+    }
+  },
+  {
+    "title": "Dwarven Elite",
+    "description": "",
+    "type": "monster",
+    "imagePath": "dwarven_elite.png",
+    "cardData": {
+      "cost": 7,
+      "attack": 7,
+      "defense": 7,
+      "monsterType": [
+        "Dwarf"
+      ]
+    }
+  },
+  {
+    "title": "Female Elf Sentinel",
+    "description": "",
+    "type": "monster",
+    "imagePath": "elf_sentinel_female.png",
+    "cardData": {
+      "cost": 2,
+      "attack": 2,
+      "defense": 3,
+      "monsterType": [
+        "Elf"
+      ]
+    }
+  },
+  {
+    "title": "Male Elf Sentinel",
+    "description": "",
+    "type": "monster",
+    "imagePath": "elf_sentinel_male.png",
+    "cardData": {
+      "cost": 2,
+      "attack": 2,
+      "defense": 2,
+      "monsterType": [
+        "Elf"
+      ]
+    }
+  },
+  {
+    "title": "Elite Elven Caster",
+    "description": "",
+    "type": "monster",
+    "imagePath": "elite_caster.png",
+    "cardData": {
+      "cost": 5,
+      "attack": 6,
+      "defense": 4,
+      "monsterType": [
+        "Elf",
+        "Magic"
+      ]
+    }
+  },
+  {
+    "title": "Elite Fishkin",
+    "description": "",
+    "type": "monster",
+    "imagePath": "elite_fishkin.png",
+    "cardData": {
+      "cost": 5,
+      "attack": 5,
+      "defense": 6,
+      "ability": [
+        "taunt"
+      ],
+      "monsterType": [
+        "Creature"
+      ]
+    }
+  },
+  {
+    "title": "Elite Golom",
+    "description": "",
+    "type": "monster",
+    "imagePath": "elite_golom.png",
+    "cardData": {
+      "cost": 6,
+      "attack": 7,
+      "defense": 5,
+      "ability": [
+        "charge"
+      ],
+      "monsterType": [
+        "Golum"
+      ]
+    }
+  },
+  {
+    "title": "Eye Monster",
+    "description": "",
+    "type": "monster",
+    "imagePath": "eye_monster.png",
+    "cardData": {
+      "cost": 2,
+      "attack": 2,
+      "defense": 2,
+      "monsterType": [
+        "Creature"
+      ]
+    }
+  },
+  {
+    "title": "Female Rogue",
+    "description": "",
+    "type": "monster",
+    "imagePath": "female_rogue.png",
+    "cardData": {
+      "cost": 2,
+      "attack": 2,
+      "defense": 1,
+      "ability": [
+        "draw"
+      ],
+      "monsterType": [
+        "Human",
+        "Rogue"
+      ]
+    }
+  },
+  {
+    "title": "Forest Keeper",
+    "description": "",
+    "type": "monster",
+    "imagePath": "forest_keeper.png",
+    "cardData": {
+      "cost": 2,
+      "attack": 2,
+      "defense": 2,
+      "monsterType": [
+        "Natural"
+      ]
+    }
+  },
+  {
+    "title": "Fuzzy Spider",
+    "description": "",
+    "type": "monster",
+    "imagePath": "fuzzy_spider.png",
+    "cardData": {
+      "cost": 1,
+      "attack": 1,
+      "defense": 1,
+      "ability": [
+        "poisonous"
+      ],
+      "monsterType": [
+        "Insect"
+      ]
+    }
+  },
+  {
+    "title": "Lich Ghost",
+    "description": "",
+    "type": "monster",
+    "imagePath": "lich.png",
+    "cardData": {
+      "cost": 4,
+      "attack": 3,
+      "defense": 6,
+      "monsterType": [
+        "Familiar"
+      ]
+    }
+  },
+  {
+    "title": "Ghouslish Elite",
+    "description": "",
+    "type": "monster",
+    "imagePath": "ghoulish_elite.png",
+    "cardData": {
+      "cost": 6,
+      "attack": 6,
+      "defense": 6,
+      "ability": [
+        "taunt"
+      ],
+      "monsterType": [
+        "Familiar"
+      ]
+    }
+  },
+  {
+    "title": "Goblin Guard",
+    "description": "",
+    "type": "monster",
+    "imagePath": "goblin_guard.png",
+    "cardData": {
+      "cost": 2,
+      "attack": 2,
+      "defense": 2,
+      "monsterType": [
+        "Goblin"
+      ]
+    }
+  },
+  {
+    "title": "Helpful Fishkin",
+    "description": "",
+    "type": "monster",
+    "imagePath": "helpful_fishkin.png",
+    "cardData": {
+      "cost": 1,
+      "attack": 1,
+      "defense": 1,
+      "ability": [
+        "draw"
+      ],
+      "monsterType": [
+        "Fishkin"
+      ]
+    }
+  },
+  {
+    "title": "Impish Warrior",
+    "description": "",
+    "type": "monster",
+    "imagePath": "imp.png",
+    "cardData": {
+      "cost": 2,
+      "attack": 2,
+      "defense": 2,
+      "ability": [
+        "charge"
+      ],
+      "monsterType": [
+        "Imp"
+      ]
+    }
+  },
+  {
+    "title": "Impish Caster",
+    "description": "",
+    "type": "monster",
+    "imagePath": "impish_caster.png",
+    "cardData": {
+      "cost": 3,
+      "attack": 3,
+      "defense": 3,
+      "monsterType": [
+        "Imp",
+        "Magic"
+      ]
+    }
+  },
+  {
+    "title": "Impish Elite",
+    "description": "",
+    "type": "monster",
+    "imagePath": "impish_elite.png",
+    "cardData": {
+      "cost": 5,
+      "attack": 6,
+      "defense": 4,
+      "monsterType": [
+        "Imp"
+      ]
+    }
+  },
+  {
+    "title": "Female Human Mage",
+    "description": "",
+    "type": "monster",
+    "imagePath": "mage_female.png",
+    "cardData": {
+      "cost": 4,
+      "attack": 4,
+      "defense": 4,
+      "monsterType": [
+        "Human",
+        "Magic"
+      ]
+    }
+  },
+  {
+    "title": "Male Human Mage",
+    "description": "",
+    "type": "monster",
+    "imagePath": "mage_male.png",
+    "cardData": {
+      "cost": 3,
+      "attack": 3,
+      "defense": 3,
+      "monsterType": [
+        "Human",
+        "Magic"
+      ]
+    }
+  },
+  {
+    "title": "Orc Warrior",
+    "description": "",
+    "type": "monster",
+    "imagePath": "orc.png",
+    "cardData": {
+      "cost": 2,
+      "attack": 2,
+      "defense": 2,
+      "ability": [
+        "charge"
+      ],
+      "monsterType": [
+        "Orc",
+        "Warrior"
+      ]
+    }
+  },
+  {
+    "title": "Orc Shaman",
+    "description": "",
+    "type": "monster",
+    "imagePath": "orc_shaman.png",
+    "cardData": {
+      "cost": 3,
+      "attack": 3,
+      "defense": 3,
+      "monsterType": [
+        "Orc",
+        "Magic"
+      ]
+    }
+  },
+  {
+    "title": "Orcish Caster",
+    "description": "",
+    "type": "monster",
+    "imagePath": "orcish_caster.png",
+    "cardData": {
+      "cost": 4,
+      "attack": 4,
+      "defense": 4,
+      "monsterType": [
+        "Orc",
+        "Magic"
+      ]
+    }
+  },
+  {
+    "title": "Orcish Elite",
+    "description": "",
+    "type": "monster",
+    "imagePath": "orcish_elite.png",
+    "cardData": {
+      "cost": 6,
+      "attack": 6,
+      "defense": 6,
+      "ability": [
+        "taunt"
+      ],
+      "monsterType": [
+        "Orc"
+      ]
+    }
+  },
+  {
+    "title": "Orcish Rogue",
+    "description": "",
+    "type": "monster",
+    "imagePath": "orcish_rogue.png",
+    "cardData": {
+      "cost": 1,
+      "attack": 1,
+      "defense": 1,
+      "ability": [
+        "draw"
+      ],
+      "monsterType": [
+        "Orc",
+        "Rogue"
+      ]
+    }
+  },
+  {
+    "title": "Rogue Trainee",
+    "description": "",
+    "type": "monster",
+    "imagePath": "rogue_trainee.png",
+    "cardData": {
+      "cost": 1,
+      "attack": 1,
+      "defense": 1,
+      "ability": [
+        "draw"
+      ],
+      "monsterType": [
+        "Human",
+        "Rogue"
+      ]
+    }
+  },
+  {
+    "title": "Stone Spirit",
+    "description": "",
+    "type": "monster",
+    "imagePath": "stone_spirit.png",
+    "cardData": {
+      "cost": 4,
+      "attack": 2,
+      "defense": 5,
+      "ability": [
+        "taunt"
+      ],
+      "monsterType": [
+        "Natural"
+      ]
+    }
+  }
+]

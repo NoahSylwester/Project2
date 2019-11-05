@@ -1351,7 +1351,7 @@ var deckId = localStorage.getItem("deckId");
 // handle case where localStorage is lost somehow
 if (deckId === undefined) {
   deckId = 1;
-};
+}
 var chosenDeck;
 $(document).ready(function () {
   $.ajax(`/api/decks/${deckId}`, {

@@ -34,7 +34,7 @@ if (process.env.NODE_ENV === "test") {
 }
 
 sequelize.sync(syncOptions).then(() => {
-  require("./bin/socketServer.js")(app, port);
+  require("./bin/socketServer.js")(app, PORT);
 });
 
 module.exports = app;

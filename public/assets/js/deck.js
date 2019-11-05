@@ -91,8 +91,6 @@ $("#save-deck").on("click", function(event) {
       deckCards: Object.values(cards)
     };
 
-    console.log(deck);
-
     let alias = "A";
     // POST deck
     $.ajax(`/api/players/${alias}/decks`, {

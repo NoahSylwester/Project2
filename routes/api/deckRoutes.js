@@ -2,7 +2,7 @@ const { Router } = require("express");
 
 let router = Router();
 
-const { models } = require("../models");
+const { models } = require("../../models");
 
 function getInclude(dataType) {
   if (dataType === "full" || typeof dataType === "undefined") {

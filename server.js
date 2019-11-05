@@ -20,10 +20,12 @@ app.engine(
 );
 app.set("view engine", "handlebars");
 
-app.use("/api/cards/", require("./routes/cardAPIRoutes"));
-app.use("/api/qrl-cards/", require("./routes/qrl-cardAPIRoutes"));
-app.use("/api/players/", require("./routes/playerAPIRoutes"));
-app.use("/api/decks/", require("./routes/deckAPIRoutes"));
+app.use("/api/cards/", require("./routes/api/cardRoutes"));
+app.use("/api/qrl-cards/", require("./routes/api/qrl-cardRoutes"));
+app.use("/api/players/", require("./routes/api/playerRoutes"));
+app.use("/api/decks/", require("./routes/api/deckRoutes"));
+
+app.use("/", require("./routes/htmlRoutes"));
 
 var syncOptions = { force: false };
 

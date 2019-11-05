@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
-module.exports = app => {
+module.exports = (app, port) => {
   let server = require("http").Server(app);
   let io = require("socket.io")(server);
 
-  server.listen(80);
+  server.listen(port);
 
   //uuid
   const uuidv1 = require("uuid/v1");

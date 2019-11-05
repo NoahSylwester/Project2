@@ -716,7 +716,7 @@ var creatures = [
       },
       {
         type: "racial",
-        data: ["Golum"]
+        data: ["Golom"]
       }
     ]
   },

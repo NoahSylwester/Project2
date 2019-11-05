@@ -356,22 +356,6 @@ var spellCreation = [
     ]
   },
   {
-    title: "Revenge of the Imps",
-    description: "All Imps receive +3/+3",
-    type: "Spell",
-    imagePath: "mages_potion.PNG",
-    cardData: [
-      {
-        type: "cost",
-        data: 4
-      },
-      {
-        type: "ability",
-        data: ["racial", ["increaseBoth", 3, "Imp"]]
-      }
-    ]
-  },
-  {
     title: "Hood of the Rogue",
     description: "All Rougues receive +2/+2",
     type: "Spell",
@@ -591,7 +575,7 @@ var spellCreation = [
       },
       {
         type: "ability",
-        data: ["racial", ["increaseBoth", 2, "Imp"]]
+        data: ["racial", ["increaseBoth", 2, "Goblin"]]
       }
     ]
   },

@@ -5,6 +5,7 @@ body {
   background-image: url('https://images.unsplash.com/photo-1493922532192-cc89807789a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=753&q=80');
   background-size: cover;
   height: 100%;
+  text-align: center;
 }
 button {
   margin: 20px;
@@ -21,4 +22,7 @@ button {
 }
 .battle:hover {
   box-shadow: 0 0 40px rgb(255, 209, 6);
+}
+.deck-choice:hover {
+  box-shadow: 0 0 40px rgb(6, 247, 255);
 }

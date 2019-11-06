@@ -1,5 +1,6 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable no-unused-vars */
+var turnNumber = 1;
 
 function gameConnect() {
 // end game flag
@@ -139,7 +140,7 @@ function gameConnect() {
         c.font = `${(this.sprite.height/8)}px Monaco`;
       
         // write name
-        c.fillText(this.name, -this.sprite.width/2 + this.sprite.width * 2/19, -this.sprite.height/2 + (Math.abs(radians)+1)**3 * 12 + this.sprite.height * 123/184, this.sprite.width/2);
+        c.fillText(this.name, -this.sprite.width/2 + this.sprite.width * 2/19, -this.sprite.height/2 + (Math.abs(radians)+1)**3 * 12 + this.sprite.height * 123/184, this.sprite.width * 3/4);
         // write cost
         c.fillText(this.cost, -this.sprite.width/2 + costTextAdjust, -this.sprite.height/2 + (Math.abs(radians)+1)**3 * 12 + this.sprite.height * 4/31, this.sprite.width/6);
         // write atk
@@ -166,7 +167,7 @@ function gameConnect() {
         c.font = `${(this.sprite.height/8)}px Monaco`;
   
         // write name
-        c.fillText(this.name, this.x + this.sprite.width * 2/19, this.y + this.sprite.height * 123/184, this.sprite.width/2);
+        c.fillText(this.name, this.x + this.sprite.width * 2/19, this.y + this.sprite.height * 123/184, this.sprite.width * 3/4);
         // write cost
         c.fillText(this.cost, this.x + costTextAdjust, this.y + this.sprite.height * 4/31, this.sprite.width/6);
         // write atk
@@ -191,7 +192,7 @@ function gameConnect() {
         c.font = `${(this.sprite.height/8)}px Monaco`;
   
         // write name
-        c.fillText(this.name, this.x + this.sprite.width * 2/19, this.y + this.sprite.height * 123/184, this.sprite.width/2);
+        c.fillText(this.name, this.x + this.sprite.width * 2/19, this.y + this.sprite.height * 123/184, this.sprite.width * 3/4);
         // write cost
         c.fillText(this.cost, this.x + costTextAdjust, this.y + this.sprite.height * 4/31, this.sprite.width/6);
         // write atk
@@ -216,7 +217,7 @@ function gameConnect() {
         c.font = `${(this.sprite.height/8)}px Monaco`;
   
         // write name
-        c.fillText(this.name, this.x + this.sprite.width * 2/19, this.y + this.sprite.height * 123/184, this.sprite.width/2);
+        c.fillText(this.name, this.x + this.sprite.width * 2/19, this.y + this.sprite.height * 123/184, this.sprite.width * 3/4);
         // write cost
         c.fillText(this.cost, this.x + costTextAdjust, this.y + this.sprite.height * 4/31, this.sprite.width/6);
         // write atk
@@ -235,7 +236,7 @@ function gameConnect() {
         c.font = `${(this.sprite.height/8)}px Monaco`;
   
         // write name
-        c.fillText(this.name, this.x + this.sprite.width * 2/19, this.y + this.sprite.height * 123/184, this.sprite.width/2);
+        c.fillText(this.name, this.x + this.sprite.width * 2/19, this.y + this.sprite.height * 123/184, this.sprite.width * 3/4);
         // write cost
         c.fillText(this.cost, this.x + costTextAdjust, this.y + this.sprite.height * 4/31, this.sprite.width/6);
         // write atk
@@ -849,8 +850,8 @@ function gameConnect() {
   // make a usable deck from chosenDeck object
   for (let i = 0; i < chosenDeck.length; i++) {
     for (let j = 0; j < chosenDeck[i].count; j++) {
-      playerDeck.push(new Card(chosenDeck[i].card.imagePath, cardBack, chosenDeck[i].card.attack, chosenDeck[i].card.defense, function() {
-        alert(`${chosenDeck[i].card.racial[0]}`);
+      playerDeck.push(new Card(chosenDeck[i].card.imagePath, cardBack, chosenDeck[i].card.attack, chosenDeck[i].card.defense, function(card) {
+        card.cardSprite.name = "Dumbotron";
       }, chosenDeck[i].card.cost, chosenDeck[i].card.title));
     }
   }
@@ -897,6 +898,7 @@ function gameConnect() {
         }
         else if (targetedCard !== undefined) {
           targetedCard.cardSprite.def -= usedCard.cardSprite.atk;
+          usedCard.cardSprite.def -= targetedCard.cardSprite.atk;
           if (targetedCard.cardSprite.def <= 0) {
             for (let i = 0; i < enemyField.length; i++) {
               if (targetedCard.cardSprite.id === enemyField[i].cardSprite.id) {
@@ -911,6 +913,21 @@ function gameConnect() {
               }
             }
           }
+          if (usedCard.cardSprite.def <= 0) {
+            for (let i = 0; i < enemyField.length; i++) {
+              if (usedCard.cardSprite.id === enemyField[i].cardSprite.id) {
+                enemyField.splice(i, 1);
+                break;
+              }
+            }
+            for (let i = 0; i < playerField.length; i++) {
+              if (usedCard.cardSprite.id === playerField[i].cardSprite.id) {
+                playerField.splice(i, 1);
+                break;
+              }
+            }
+          }
+          
         }
         monstersThatCantAttackIds.push(usedCard.cardSprite.id);
         use();
@@ -918,7 +935,7 @@ function gameConnect() {
       else {
         alert("That monster has already been used this turn");
       }
-    }
+    } 
     else {
       alert("Card must be played first");
     }
@@ -1198,7 +1215,7 @@ function gameConnect() {
         c.font = `${(zoomHeight/8)}px Monaco`;
   
         // write name
-        c.fillText(zoomedCard.cardSprite.name, x + zoomWidth * 2/19, y + zoomHeight * 123/184, zoomWidth/2);
+        c.fillText(zoomedCard.cardSprite.name, x + zoomWidth * 2/19, y + zoomHeight * 123/184, zoomWidth * 3/4);
         // write cost
         c.fillText(zoomedCard.cardSprite.cost, x + costTextAdjust, y + zoomHeight * 4/31, zoomWidth/6);
         // write atk
@@ -1339,9 +1356,11 @@ function gameConnect() {
   socket.on("end", function (data) {
     isPlayerTurn = true;
     // limit mana to a maximum of 10
-    if (player.mana < 10) {
-      player.mana ++;
+    player.mana += turnNumber;
+    if (player.mana > 10) {
+      player.mana = 10;
     }
+    turnNumber ++;
     player.draws ++;
     socket.emit("upkeep", { hp: player.hp, mana: player.mana, draws: player.draws });
   });

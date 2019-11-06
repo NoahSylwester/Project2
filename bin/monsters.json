@@ -3,7 +3,7 @@
     "title": "Abomination",
     "description": "",
     "type": "monster",
-    "imagePath": "abomination.png",
+    "imagePath": "abomination.jpg",
     "cardData": {
       "cost": 3,
       "attack": 3,
@@ -20,7 +20,7 @@
     "title": "Male Drow Warrior",
     "description": "",
     "type": "monster",
-    "imagePath": "drow_warrior_male.png",
+    "imagePath": "drow_warrior_male.jpg",
     "cardData": {
       "cost": 2,
       "attack": 2,
@@ -34,7 +34,7 @@
     "title": "Adult Fishkin",
     "description": "",
     "type": "monster",
-    "imagePath": "adult_fishkin.png",
+    "imagePath": "adult_fishkin.jpg",
     "cardData": {
       "cost": 4,
       "attack": 4,
@@ -48,7 +48,7 @@
     "title": "Armored Escort",
     "description": "",
     "type": "monster",
-    "imagePath": "armored_escort.png",
+    "imagePath": "armored_escort.jpg",
     "cardData": {
       "cost": 2,
       "attack": 2,
@@ -65,7 +65,7 @@
     "title": "Baby Blue Dragon",
     "description": "",
     "type": "monster",
-    "imagePath": "baby_blue_dragon.png",
+    "imagePath": "baby_blue_dragon.jpg",
     "cardData": {
       "cost": 1,
       "attack": 2,
@@ -79,7 +79,7 @@
     "title": "Baby Green Monster",
     "description": "",
     "type": "monster",
-    "imagePath": "baby_green_monster.png",
+    "imagePath": "baby_green_monster.jpg",
     "cardData": {
       "cost": 2,
       "attack": 2,
@@ -93,7 +93,7 @@
     "title": "Baby Skeleton",
     "description": "",
     "type": "monster",
-    "imagePath": "baby_skeleton.png",
+    "imagePath": "baby_skeleton.jpg",
     "cardData": {
       "cost": 1,
       "attack": 1,
@@ -107,7 +107,7 @@
     "title": "Elite Barbarian",
     "description": "",
     "type": "monster",
-    "imagePath": "barbarian_male.png",
+    "imagePath": "barbarian_male.jpg",
     "cardData": {
       "cost": 6,
       "attack": 6,
@@ -121,7 +121,7 @@
     "title": "Blue Lion Rat",
     "description": "",
     "type": "monster",
-    "imagePath": "blue_creature.png",
+    "imagePath": "blue_creature.jpg",
     "cardData": {
       "cost": 4,
       "attack": 4,
@@ -135,7 +135,7 @@
     "title": "Blue Tongued Cave Dweller",
     "description": "",
     "type": "monster",
-    "imagePath": "blue_tongued_cave_dweller.png",
+    "imagePath": "blue_tongued_cave_dweller.jpg",
     "cardData": {
       "cost": 3,
       "attack": 4,
@@ -149,7 +149,7 @@
     "title": "Forest Boar",
     "description": "",
     "type": "monster",
-    "imagePath": "boar.png",
+    "imagePath": "boar.jpg",
     "cardData": {
       "cost": 2,
       "attack": 2,
@@ -166,7 +166,7 @@
     "title": "Cave Bug",
     "description": "",
     "type": "monster",
-    "imagePath": "cave_bug.png",
+    "imagePath": "cave_bug.jpg",
     "cardData": {
       "cost": 2,
       "attack": 1,
@@ -183,7 +183,7 @@
     "title": "Epic Crab",
     "description": "",
     "type": "monster",
-    "imagePath": "crab.png",
+    "imagePath": "crab.jpg",
     "cardData": {
       "cost": 4,
       "attack": 3,
@@ -197,7 +197,7 @@
     "title": "Goblin Cultist",
     "description": "",
     "type": "monster",
-    "imagePath": "cultist_goblin.png",
+    "imagePath": "cultist_goblin.jpg",
     "cardData": {
       "cost": 4,
       "attack": 2,
@@ -212,7 +212,7 @@
     "title": "Killer Cyclops",
     "description": "",
     "type": "monster",
-    "imagePath": "cyclops.png",
+    "imagePath": "cyclops.jpg",
     "cardData": {
       "cost": 4,
       "attack": 5,
@@ -229,7 +229,7 @@
     "title": "Dangerous Squid",
     "description": "",
     "type": "monster",
-    "imagePath": "dangerous_squid.png",
+    "imagePath": "dangerous_squid.jpg",
     "cardData": {
       "cost": 4,
       "attack": 3,
@@ -246,7 +246,7 @@
     "title": "Deep Sea Creature",
     "description": "",
     "type": "monster",
-    "imagePath": "deepsea_creature.png",
+    "imagePath": "deepsea_creature.jpg",
     "cardData": {
       "cost": 3,
       "attack": 3,
@@ -260,7 +260,7 @@
     "title": "Demon Headhunter",
     "description": "",
     "type": "monster",
-    "imagePath": "demon_headhunter.png",
+    "imagePath": "demon_headhunter.jpg",
     "cardData": {
       "cost": 7,
       "attack": 7,
@@ -274,7 +274,7 @@
     "title": "Demon Soldier",
     "description": "",
     "type": "monster",
-    "imagePath": "demon_soldier.png",
+    "imagePath": "demon_soldier.jpg",
     "cardData": {
       "cost": 3,
       "attack": 3,
@@ -288,7 +288,7 @@
     "title": "Devourer",
     "description": "",
     "type": "monster",
-    "imagePath": "devourer.png",
+    "imagePath": "devourer.jpg",
     "cardData": {
       "cost": 1,
       "attack": 1,
@@ -305,7 +305,7 @@
     "title": "Female Drow Warrior",
     "description": "",
     "type": "monster",
-    "imagePath": "drow_warrior_female.png",
+    "imagePath": "drow_warrior_female.jpg",
     "cardData": {
       "cost": 2,
       "attack": 3,
@@ -320,7 +320,7 @@
     "title": "Female Dwarf Warrior",
     "description": "",
     "type": "monster",
-    "imagePath": "dwarf_warrior_female.png",
+    "imagePath": "dwarf_warrior_female.jpg",
     "cardData": {
       "cost": 2,
       "attack": 3,
@@ -338,7 +338,7 @@
     "title": "Male Dwarf Warrior",
     "description": "",
     "type": "monster",
-    "imagePath": "dwarf_warrior_male.png",
+    "imagePath": "dwarf_warrior_male.jpg",
     "cardData": {
       "cost": 3,
       "attack": 3,
@@ -353,7 +353,7 @@
     "title": "Dwarven Healer",
     "description": "",
     "type": "monster",
-    "imagePath": "dwarfen_healer_female.png",
+    "imagePath": "dwarfen_healer_female.jpg",
     "cardData": {
       "cost": 2,
       "attack": 1,
@@ -368,7 +368,7 @@
     "title": "Dwarven Elite",
     "description": "",
     "type": "monster",
-    "imagePath": "dwarven_elite.png",
+    "imagePath": "dwarven_elite.jpg",
     "cardData": {
       "cost": 7,
       "attack": 7,
@@ -382,7 +382,7 @@
     "title": "Female Elf Sentinel",
     "description": "",
     "type": "monster",
-    "imagePath": "elf_sentinel_female.png",
+    "imagePath": "elf_sentinel_female.jpg",
     "cardData": {
       "cost": 2,
       "attack": 2,
@@ -396,7 +396,7 @@
     "title": "Male Elf Sentinel",
     "description": "",
     "type": "monster",
-    "imagePath": "elf_sentinel_male.png",
+    "imagePath": "elf_sentinel_male.jpg",
     "cardData": {
       "cost": 2,
       "attack": 2,
@@ -410,7 +410,7 @@
     "title": "Elite Elven Caster",
     "description": "",
     "type": "monster",
-    "imagePath": "elite_caster.png",
+    "imagePath": "elite_caster.jpg",
     "cardData": {
       "cost": 5,
       "attack": 6,
@@ -425,7 +425,7 @@
     "title": "Elite Fishkin",
     "description": "",
     "type": "monster",
-    "imagePath": "elite_fishkin.png",
+    "imagePath": "elite_fishkin.jpg",
     "cardData": {
       "cost": 5,
       "attack": 5,
@@ -442,7 +442,7 @@
     "title": "Elite Golom",
     "description": "",
     "type": "monster",
-    "imagePath": "elite_golom.png",
+    "imagePath": "elite_golom.jpg",
     "cardData": {
       "cost": 6,
       "attack": 7,
@@ -459,7 +459,7 @@
     "title": "Eye Monster",
     "description": "",
     "type": "monster",
-    "imagePath": "eye_monster.png",
+    "imagePath": "eye_monster.jpg",
     "cardData": {
       "cost": 2,
       "attack": 2,
@@ -473,7 +473,7 @@
     "title": "Female Rogue",
     "description": "",
     "type": "monster",
-    "imagePath": "female_rogue.png",
+    "imagePath": "female_rogue.jpg",
     "cardData": {
       "cost": 2,
       "attack": 2,
@@ -491,7 +491,7 @@
     "title": "Forest Keeper",
     "description": "",
     "type": "monster",
-    "imagePath": "forest_keeper.png",
+    "imagePath": "forest_keeper.jpg",
     "cardData": {
       "cost": 2,
       "attack": 2,
@@ -505,7 +505,7 @@
     "title": "Fuzzy Spider",
     "description": "",
     "type": "monster",
-    "imagePath": "fuzzy_spider.png",
+    "imagePath": "fuzzy_spider.jpg",
     "cardData": {
       "cost": 1,
       "attack": 1,
@@ -522,7 +522,7 @@
     "title": "Lich Ghost",
     "description": "",
     "type": "monster",
-    "imagePath": "lich.png",
+    "imagePath": "lich.jpg",
     "cardData": {
       "cost": 4,
       "attack": 3,
@@ -536,7 +536,7 @@
     "title": "Ghouslish Elite",
     "description": "",
     "type": "monster",
-    "imagePath": "ghoulish_elite.png",
+    "imagePath": "ghoulish_elite.jpg",
     "cardData": {
       "cost": 6,
       "attack": 6,
@@ -553,7 +553,7 @@
     "title": "Goblin Guard",
     "description": "",
     "type": "monster",
-    "imagePath": "goblin_guard.png",
+    "imagePath": "goblin_guard.jpg",
     "cardData": {
       "cost": 2,
       "attack": 2,
@@ -567,7 +567,7 @@
     "title": "Helpful Fishkin",
     "description": "",
     "type": "monster",
-    "imagePath": "helpful_fishkin.png",
+    "imagePath": "helpful_fishkin.jpg",
     "cardData": {
       "cost": 1,
       "attack": 1,
@@ -584,7 +584,7 @@
     "title": "Impish Warrior",
     "description": "",
     "type": "monster",
-    "imagePath": "imp.png",
+    "imagePath": "imp.jpg",
     "cardData": {
       "cost": 2,
       "attack": 2,
@@ -601,7 +601,7 @@
     "title": "Impish Caster",
     "description": "",
     "type": "monster",
-    "imagePath": "impish_caster.png",
+    "imagePath": "impish_caster.jpg",
     "cardData": {
       "cost": 3,
       "attack": 3,
@@ -616,7 +616,7 @@
     "title": "Impish Elite",
     "description": "",
     "type": "monster",
-    "imagePath": "impish_elite.png",
+    "imagePath": "impish_elite.jpg",
     "cardData": {
       "cost": 5,
       "attack": 6,
@@ -630,7 +630,7 @@
     "title": "Female Human Mage",
     "description": "",
     "type": "monster",
-    "imagePath": "mage_female.png",
+    "imagePath": "mage_female.jpg",
     "cardData": {
       "cost": 4,
       "attack": 4,
@@ -645,7 +645,7 @@
     "title": "Male Human Mage",
     "description": "",
     "type": "monster",
-    "imagePath": "mage_male.png",
+    "imagePath": "mage_male.jpg",
     "cardData": {
       "cost": 3,
       "attack": 3,
@@ -660,7 +660,7 @@
     "title": "Orc Warrior",
     "description": "",
     "type": "monster",
-    "imagePath": "orc.png",
+    "imagePath": "orc.jpg",
     "cardData": {
       "cost": 2,
       "attack": 2,
@@ -678,7 +678,7 @@
     "title": "Orc Shaman",
     "description": "",
     "type": "monster",
-    "imagePath": "orc_shaman.png",
+    "imagePath": "orc_shaman.jpg",
     "cardData": {
       "cost": 3,
       "attack": 3,
@@ -693,7 +693,7 @@
     "title": "Orcish Caster",
     "description": "",
     "type": "monster",
-    "imagePath": "orcish_caster.png",
+    "imagePath": "orcish_caster.jpg",
     "cardData": {
       "cost": 4,
       "attack": 4,
@@ -708,7 +708,7 @@
     "title": "Orcish Elite",
     "description": "",
     "type": "monster",
-    "imagePath": "orcish_elite.png",
+    "imagePath": "orcish_elite.jpg",
     "cardData": {
       "cost": 6,
       "attack": 6,
@@ -725,7 +725,7 @@
     "title": "Orcish Rogue",
     "description": "",
     "type": "monster",
-    "imagePath": "orcish_rogue.png",
+    "imagePath": "orcish_rogue.jpg",
     "cardData": {
       "cost": 1,
       "attack": 1,
@@ -743,7 +743,7 @@
     "title": "Rogue Trainee",
     "description": "",
     "type": "monster",
-    "imagePath": "rogue_trainee.png",
+    "imagePath": "rogue_trainee.jpg",
     "cardData": {
       "cost": 1,
       "attack": 1,
@@ -761,7 +761,7 @@
     "title": "Stone Spirit",
     "description": "",
     "type": "monster",
-    "imagePath": "stone_spirit.png",
+    "imagePath": "stone_spirit.jpg",
     "cardData": {
       "cost": 4,
       "attack": 2,

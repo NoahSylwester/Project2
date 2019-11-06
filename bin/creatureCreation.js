@@ -4,7 +4,7 @@ var creatures = [
     title: "Abomination",
     description: "",
     type: "monster",
-    imagePath: "abomination.png",
+    imagePath: "abomination.jpg",
     cardData: [
       {
         type: "cost",
@@ -52,7 +52,7 @@ var creatures = [
     title: "Adult Fishkin",
     description: "",
     type: "monster",
-    imagePath: "adult_fishkin.png",
+    imagePath: "adult_fishkin.jpg",
     cardData: [
       {
         type: "cost",
@@ -76,7 +76,7 @@ var creatures = [
     title: "Armored Escort",
     description: "",
     type: "monster",
-    imagePath: "armored_escort.png",
+    imagePath: "armored_escort.jpg",
     cardData: [
       {
         type: "cost",
@@ -100,7 +100,7 @@ var creatures = [
     title: "Baby Blue Dragon",
     description: "",
     type: "monster",
-    imagePath: "baby_blue_dragon.png",
+    imagePath: "baby_blue_dragon.jpg",
     cardData: [
       {
         type: "cost",
@@ -124,7 +124,7 @@ var creatures = [
     title: "Baby Green Monster",
     description: "",
     type: "monster",
-    imagePath: "baby_green_monster.png",
+    imagePath: "baby_green_monster.jpg",
     cardData: [
       {
         type: "cost",
@@ -148,7 +148,7 @@ var creatures = [
     title: "Baby Skeleton",
     description: "",
     type: "monster",
-    imagePath: "baby_skeleton.png",
+    imagePath: "baby_skeleton.jpg",
     cardData: [
       {
         type: "cost",
@@ -172,7 +172,7 @@ var creatures = [
     title: "Elite Barbarian",
     description: "",
     type: "monster",
-    imagePath: "barbarian_male.png",
+    imagePath: "barbarian_male.jpg",
     cardData: [
       {
         type: "cost",
@@ -196,7 +196,7 @@ var creatures = [
     title: "Blue Lion Rat",
     description: "",
     type: "monster",
-    imagePath: "blue_creature.png",
+    imagePath: "blue_creature.jpg",
     cardData: [
       {
         type: "cost",
@@ -220,7 +220,7 @@ var creatures = [
     title: "Blue Tongued Cave Dweller",
     description: "",
     type: "monster",
-    imagePath: "blue_tongued_cave_dweller.png",
+    imagePath: "blue_tongued_cave_dweller.jpg",
     cardData: [
       {
         type: "cost",
@@ -244,7 +244,7 @@ var creatures = [
     title: "Forest Boar",
     description: "",
     type: "monster",
-    imagePath: "boar.png",
+    imagePath: "boar.jpg",
     cardData: [
       {
         type: "cost",
@@ -268,7 +268,7 @@ var creatures = [
     title: "Cave Bug",
     description: "",
     type: "monster",
-    imagePath: "cave_bug.png",
+    imagePath: "cave_bug.jpg",
     cardData: [
       {
         type: "cost",
@@ -292,7 +292,7 @@ var creatures = [
     title: "Epic Crab",
     description: "",
     type: "monster",
-    imagePath: "crab.png",
+    imagePath: "crab.jpg",
     cardData: [
       {
         type: "cost",
@@ -316,7 +316,7 @@ var creatures = [
     title: "Goblin Cultist",
     description: "",
     type: "monster",
-    imagePath: "cultist_goblin.png",
+    imagePath: "cultist_goblin.jpg",
     cardData: [
       {
         type: "cost",
@@ -340,7 +340,7 @@ var creatures = [
     title: "Killer Cyclops",
     description: "",
     type: "monster",
-    imagePath: "cyclops.png",
+    imagePath: "cyclops.jpg",
     cardData: [
       {
         type: "cost",
@@ -364,7 +364,7 @@ var creatures = [
     title: "Dangerous Squid",
     description: "",
     type: "monster",
-    imagePath: "dangerous_squid.png",
+    imagePath: "dangerous_squid.jpg",
     cardData: [
       {
         type: "cost",
@@ -388,7 +388,7 @@ var creatures = [
     title: "Deep Sea Creature",
     description: "",
     type: "monster",
-    imagePath: "deepsea_creature.png",
+    imagePath: "deepsea_creature.jpg",
     cardData: [
       {
         type: "cost",
@@ -412,7 +412,7 @@ var creatures = [
     title: "Demon Headhunter",
     description: "",
     type: "monster",
-    imagePath: "demon_headhunter.png",
+    imagePath: "demon_headhunter.jpg",
     cardData: [
       {
         type: "cost",
@@ -436,7 +436,7 @@ var creatures = [
     title: "Demon Soldier",
     description: "",
     type: "monster",
-    imagePath: "abomination.png",
+    imagePath: "demon_soldier.jpg",
     cardData: [
       {
         type: "cost",
@@ -460,7 +460,7 @@ var creatures = [
     title: "Devourer",
     description: "",
     type: "monster",
-    imagePath: "devourer.png",
+    imagePath: "devourer.jpg",
     cardData: [
       {
         type: "cost",
@@ -484,7 +484,7 @@ var creatures = [
     title: "Female Drow Warrior",
     description: "",
     type: "monster",
-    imagePath: "drow_warrior_female.png",
+    imagePath: "drow_warrior_female.jpg",
     cardData: [
       {
         type: "cost",
@@ -508,7 +508,7 @@ var creatures = [
     title: "Female Dwarf Warrior",
     description: "",
     type: "monster",
-    imagePath: "dwarf_warrior_female.png",
+    imagePath: "dwarf_warrior_female.jpg",
     cardData: [
       {
         type: "cost",
@@ -532,7 +532,7 @@ var creatures = [
     title: "Male Dwarf Warrior",
     description: "",
     type: "monster",
-    imagePath: "dwarf_warrior_male.png",
+    imagePath: "dwarf_warrior_male.jpg",
     cardData: [
       {
         type: "cost",
@@ -556,7 +556,7 @@ var creatures = [
     title: "Dwarven Healer",
     description: "",
     type: "monster",
-    imagePath: "dwarfen_healer_female.png",
+    imagePath: "dwarfen_healer_female.jpg",
     cardData: [
       {
         type: "cost",
@@ -580,7 +580,7 @@ var creatures = [
     title: "Dwarven Elite",
     description: "",
     type: "monster",
-    imagePath: "dwarven_elite.png",
+    imagePath: "dwarven_elite.jpg",
     cardData: [
       {
         type: "cost",
@@ -604,7 +604,7 @@ var creatures = [
     title: "Female Elf Sentinel",
     description: "",
     type: "monster",
-    imagePath: "elf_sentinel_female.png",
+    imagePath: "elf_sentinel_female.jpg",
     cardData: [
       {
         type: "cost",
@@ -628,7 +628,7 @@ var creatures = [
     title: "Male Elf Sentinel",
     description: "",
     type: "monster",
-    imagePath: "elf_sentinel_male.png",
+    imagePath: "elf_sentinel_male.jpg",
     cardData: [
       {
         type: "cost",
@@ -652,7 +652,7 @@ var creatures = [
     title: "Elite Elven Caster",
     description: "",
     type: "monster",
-    imagePath: "elite_caster.png",
+    imagePath: "elite_caster.jpg",
     cardData: [
       {
         type: "cost",
@@ -676,7 +676,7 @@ var creatures = [
     title: "Elite Fishkin",
     description: "",
     type: "monster",
-    imagePath: "elite_fishkin.png",
+    imagePath: "elite_fishkin.jpg",
     cardData: [
       {
         type: "cost",
@@ -700,7 +700,7 @@ var creatures = [
     title: "Elite Golom",
     description: "",
     type: "monster",
-    imagePath: "elite_golom.png",
+    imagePath: "elite_golom.jpg",
     cardData: [
       {
         type: "cost",
@@ -724,7 +724,7 @@ var creatures = [
     title: "Eye Monster",
     description: "",
     type: "monster",
-    imagePath: "eye_monster.png",
+    imagePath: "eye_monster.jpg",
     cardData: [
       {
         type: "cost",
@@ -748,7 +748,7 @@ var creatures = [
     title: "Female Rogue",
     description: "",
     type: "monster",
-    imagePath: "female_rogue.png",
+    imagePath: "female_rogue.jpg",
     cardData: [
       {
         type: "cost",
@@ -772,7 +772,7 @@ var creatures = [
     title: "Forest Keeper",
     description: "",
     type: "monster",
-    imagePath: "forest_keeper.png",
+    imagePath: "forest_keeper.jpg",
     cardData: [
       {
         type: "cost",
@@ -796,7 +796,7 @@ var creatures = [
     title: "Abomination",
     description: "",
     type: "monster",
-    imagePath: "abomination.png",
+    imagePath: "abomination.jpg",
     cardData: [
       {
         type: "cost",
@@ -820,7 +820,7 @@ var creatures = [
     title: "Fuzzy Spider",
     description: "",
     type: "monster",
-    imagePath: "fuzzy_spider.png",
+    imagePath: "fuzzy_spider.jpg",
     cardData: [
       {
         type: "cost",
@@ -844,7 +844,7 @@ var creatures = [
     title: "Lich Ghost",
     description: "",
     type: "monster",
-    imagePath: "abomination.png",
+    imagePath: "abomination.jpg",
     cardData: [
       {
         type: "cost",
@@ -868,7 +868,7 @@ var creatures = [
     title: "Ghouslish Elite",
     description: "",
     type: "monster",
-    imagePath: "ghoulish_elite.png",
+    imagePath: "ghoulish_elite.jpg",
     cardData: [
       {
         type: "cost",
@@ -892,7 +892,7 @@ var creatures = [
     title: "Goblin Guard",
     description: "",
     type: "monster",
-    imagePath: "goblin_guard.png",
+    imagePath: "goblin_guard.jpg",
     cardData: [
       {
         type: "cost",
@@ -916,7 +916,7 @@ var creatures = [
     title: "Helpful Fishkin",
     description: "",
     type: "monster",
-    imagePath: "helpful_fishkin.png",
+    imagePath: "helpful_fishkin.jpg",
     cardData: [
       {
         type: "cost",
@@ -940,7 +940,7 @@ var creatures = [
     title: "Impish Warrior",
     description: "",
     type: "monster",
-    imagePath: "imp.png",
+    imagePath: "imp.jpg",
     cardData: [
       {
         type: "cost",
@@ -964,7 +964,7 @@ var creatures = [
     title: "Impish Caster",
     description: "",
     type: "monster",
-    imagePath: "impish_caster.png",
+    imagePath: "impish_caster.jpg",
     cardData: [
       {
         type: "cost",
@@ -988,7 +988,7 @@ var creatures = [
     title: "Impish Elite",
     description: "",
     type: "monster",
-    imagePath: "abomination.png",
+    imagePath: "abomination.jpg",
     cardData: [
       {
         type: "cost",
@@ -1012,7 +1012,7 @@ var creatures = [
     title: "Female Human Mage",
     description: "",
     type: "monster",
-    imagePath: "mage_female.png",
+    imagePath: "mage_female.jpg",
     cardData: [
       {
         type: "cost",
@@ -1036,7 +1036,7 @@ var creatures = [
     title: "Male Human Mage",
     description: "",
     type: "monster",
-    imagePath: "mage_male.png",
+    imagePath: "mage_male.jpg",
     cardData: [
       {
         type: "cost",
@@ -1060,7 +1060,7 @@ var creatures = [
     title: "Orc Warrior",
     description: "",
     type: "monster",
-    imagePath: "orc.png",
+    imagePath: "orc.jpg",
     cardData: [
       {
         type: "cost",
@@ -1084,7 +1084,7 @@ var creatures = [
     title: "Orc Shaman",
     description: "",
     type: "monster",
-    imagePath: "orc_shaman.png",
+    imagePath: "orc_shaman.jpg",
     cardData: [
       {
         type: "cost",
@@ -1108,7 +1108,7 @@ var creatures = [
     title: "Orcish Caster",
     description: "",
     type: "monster",
-    imagePath: "orcish_caster.png",
+    imagePath: "orcish_caster.jpg",
     cardData: [
       {
         type: "cost",
@@ -1132,7 +1132,7 @@ var creatures = [
     title: "Orcish Elite",
     description: "",
     type: "monster",
-    imagePath: "orcish_elite.png",
+    imagePath: "orcish_elite.jpg",
     cardData: [
       {
         type: "cost",
@@ -1156,7 +1156,7 @@ var creatures = [
     title: "Orcish Rogue",
     description: "",
     type: "monster",
-    imagePath: "orcish_rogue.png",
+    imagePath: "orcish_rogue.jpg",
     cardData: [
       {
         type: "cost",
@@ -1180,7 +1180,7 @@ var creatures = [
     title: "Rogue Trainee",
     description: "",
     type: "monster",
-    imagePath: "rogue_trainee.png",
+    imagePath: "rogue_trainee.jpg",
     cardData: [
       {
         type: "cost",
@@ -1204,7 +1204,7 @@ var creatures = [
     title: "Stone Spirit",
     description: "",
     type: "monster",
-    imagePath: "stone_spirit.png",
+    imagePath: "stone_spirit.jpg",
     cardData: [
       {
         type: "cost",

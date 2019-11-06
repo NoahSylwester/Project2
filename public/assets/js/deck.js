@@ -62,15 +62,20 @@ $(".build-area").on("click", ".card-img", function(event) {
 $("#save-deck").on("click", function(event) {
   event.preventDefault();
   if (isNotAlreadyClicked) {
+    var name = $("#deck-name")
+      .val()
+      .trim();
+    if (!name) {
+      return;
+    }
+
+    isNotAlreadyClicked = false;
+
     // disable modal close
     $("#create-deck").attr({
       "data-backdrop": "static",
       "data-keyboard": "false"
     });
-    isNotAlreadyClicked = false;
-    var deckName = $("#deck-name")
-      .val()
-      .trim();
 
     let cards = {};
 
@@ -87,7 +92,7 @@ $("#save-deck").on("click", function(event) {
     });
 
     let deck = {
-      name: deckName,
+      name,
       deckCards: Object.values(cards)
     };
 
@@ -96,27 +101,27 @@ $("#save-deck").on("click", function(event) {
     $.ajax(`/api/players/${alias}/decks`, {
       type: "POST",
       contentType: "application/json",
-      data: JSON.stringify(deck)
-    }).then(function(err, res) {
-      console.log(err, res);
-      // change modal content
-      if (typeof err !== "object") {
+      data: JSON.stringify(deck),
+      success: res => {
+        console.log(res);
+      }
+    })
+      // eslint-disable-next-line no-unused-vars
+      .then(res => {
+        $(".modal-header").html(
+          // eslint-disable-next-line prettier/prettier
+          "<h5 class=\"modal-title\" id=\"nameModalLabel\">Your deck has been saved</h5>"
+        );
+        setTimeout(() => {
+          location.replace("/menu");
+        }, 750);
+      })
+      .catch(err => {
         $(".modal-header").html(
           // eslint-disable-next-line prettier/prettier
           "<h5 class=\"modal-title\" id=\"nameModalLabel\">An error has occurred</h5>"
         );
         $(".modal-body").html(err);
-      } else {
-        $(".modal-header").html(
-          // eslint-disable-next-line prettier/prettier
-          "<h5 class=\"modal-title\" id=\"nameModalLabel\">Your deck has been saved</h5>"
-        );
-        $(".modal-body").html(res);
-        $(".modal-footer").html(
-          // eslint-disable-next-line prettier/prettier
-          "<a href=\"/home\"><button class=\"btn btn-md btn-dark\">Return home</button></a>"
-        );
-      }
-    });
+      });
   }
 });

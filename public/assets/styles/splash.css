@@ -46,3 +46,6 @@ a span {
   text-shadow: 0 0 50px rgb(255, 255, 255);
   transition: 0.5s;
 }
+#logo {
+  width: 90%;
+}

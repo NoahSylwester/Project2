@@ -846,13 +846,13 @@ function gameConnect() {
   //   card.cardSprite.name = "Dummy";
   // },1));
   // playerField.push(new Card(cardFront,0,0,function(card) {alert("ability!");}));
-
+  const dumbotronify = function(card) {
+    card.cardSprite.name = "Dumbotron";
+  };
   // make a usable deck from chosenDeck object
   for (let i = 0; i < chosenDeck.length; i++) {
     for (let j = 0; j < chosenDeck[i].count; j++) {
-      playerDeck.push(new Card(chosenDeck[i].card.imagePath, cardBack, chosenDeck[i].card.attack, chosenDeck[i].card.defense, function(card) {
-        card.cardSprite.name = "Dumbotron";
-      }, chosenDeck[i].card.cost, chosenDeck[i].card.title));
+      playerDeck.push(new Card(chosenDeck[i].card.imagePath, cardBack, chosenDeck[i].card.attack, chosenDeck[i].card.defense, dumbotronify, chosenDeck[i].card.cost, chosenDeck[i].card.title));
     }
   }
   // shuffle the deck

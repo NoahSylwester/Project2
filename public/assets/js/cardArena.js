@@ -892,7 +892,7 @@ function gameConnect() {
         else if (playerHighlight) {
           player.hp -= usedCard.cardSprite.atk;
           // check for win
-          if (player.hp >= 0) {
+          if (player.hp <= 0) {
             lose();
           }
         }

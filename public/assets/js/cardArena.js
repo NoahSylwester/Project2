@@ -1349,7 +1349,7 @@ function gameConnect() {
 
 var deckId = localStorage.getItem("deckId");
 // handle case where localStorage is lost somehow
-if (deckId === undefined) {
+if (deckId === null) {
   deckId = 1;
 }
 var chosenDeck;

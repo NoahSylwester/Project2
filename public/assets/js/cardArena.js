@@ -536,19 +536,21 @@ function gameConnect() {
 
   // clientside action functions
   function clickDeck(array) {
-  // draw a card
-    if (cursor.x >= array[array.length-1].cardSprite.x && cursor.x <= array[array.length-1].cardSprite.x + array[array.length-1].cardSprite.sprite.width
-    && cursor.y >= array[array.length-1].cardSprite.y && cursor.y <= array[array.length-1].cardSprite.y + array[array.length-1].cardSprite.sprite.height) {
-    // check hand size against max
-      if (playerHand.length < maxHandSize) {
-      // draw card into hand, render as face-up
-        array[array.length-1].cardSprite.sprite.img = cardFront;
-        playerHand.push(array.pop());
-        player.draws --;
-        drawCard();
+    if (player.draws > 0) {
+    // draw a card
+      if (cursor.x >= array[array.length-1].cardSprite.x && cursor.x <= array[array.length-1].cardSprite.x + array[array.length-1].cardSprite.sprite.width
+      && cursor.y >= array[array.length-1].cardSprite.y && cursor.y <= array[array.length-1].cardSprite.y + array[array.length-1].cardSprite.sprite.height) {
+      // check hand size against max
+        if (playerHand.length < maxHandSize) {
+        // draw card into hand, render as face-up
+          array[array.length-1].cardSprite.sprite.img = cardFront;
+          playerHand.push(array.pop());
+          player.draws --;
+          drawCard();
+        }
+        // bug fix for doubleclick
+        isDeckClicked = true;
       }
-      // bug fix for doubleclick
-      isDeckClicked = true;
     }
   }
   function mouseDownIteration(array) {

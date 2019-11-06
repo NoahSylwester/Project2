@@ -23,8 +23,9 @@ $.ajax({
   if (Array.isArray(res)) {
     res.forEach(card => {
       let { title, imagePath, id } = card;
+      let jpgPath = imagePath.slice(0, imagePath.length - 3) + "jpg";
       let htmlCard = $(
-        `<img src="./assets/img/cardArt/${imagePath}" alt="${title}">`
+        `<img src="./assets/img/cardArt/${jpgPath}" alt="${title}">`
       );
       htmlCard.addClass("card-img");
       htmlCard.data("id", id);

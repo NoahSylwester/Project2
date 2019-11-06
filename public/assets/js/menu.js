@@ -28,7 +28,7 @@ $("#battle").on("click", event => {
     $(".deck-choice").on("click", function(event) {
       event.preventDefault();
       chosenDeckId = $(this).data("id");
-      localStorage.setItem({ deckId: chosenDeckId });
+      localStorage.setItem("deckId", chosenDeckId);
     });
   });
 });
